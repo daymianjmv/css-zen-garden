@@ -1,1 +1,53 @@
-/* Empty file for template. Remember to edit only this file and not the HTML file */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+[role=banner] {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
+
+}
+
+[role=banner] h1 {
+    font-size: 700%;
+    padding: 0.7%;
+    background-color: #251E2079;
+    border-radius: 1em 0 1em 0;
+    width: 5em;
+
+}
+
+header h1 {
+    font-size: 700%;
+    padding: 0.7%;
+    background-color: #251E2079;
+    border-radius: 1em 0 1em 0;
+    display: inline-block;
+    min-height: 70px;
+    margin: 55px auto 0;
+    z-index: 2;
+}
+
+
+header {
+    margin: 0 auto;
+    max-width: 1040px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-image: url(img/MayItNeverFalter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-size: cover;
+    position: relative;
+    top: 50%
+}
+
+[role=banner] h2 {}
