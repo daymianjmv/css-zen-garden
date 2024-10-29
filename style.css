@@ -11,12 +11,16 @@
 }
 
 [role=banner] h1 {
-    font-size: 700%;
+    font-size: 2000%;
     padding: 0.7%;
     background-color: #251E2079;
     border-radius: 1em 0 1em 0;
     width: 5em;
 
+}
+
+[role=banner] h2{
+    font-size: 400%
 }
 
 header h1 {
@@ -36,21 +40,32 @@ body, html {
   height: 100%;
   margin: 0;
 }
-header {
+header{
     position: relative;
     text-align: center;
     top: 0;
     z-index: 100;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro{
     background-image: url(img/MayItNeverFalter.png);
     background-repeat: no-repeat;
     height: 110vh;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    position: relative;
-    display: flex;
+    height: 65em;
+    color: white;
+}
+header > .summary{
+    color: white;
 }
 
 header h2 {
     display: flex;
-;
+
 }
