@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
+* {
+    color: white;
+}
+
 [role=banner] {
     font-family: "Italianno", cursive;
     font-weight: 400;
@@ -19,7 +23,7 @@
 
 }
 
-[role=banner] h2{
+[role=banner] h2 {
     font-size: 400%
 }
 
@@ -36,11 +40,13 @@ header h1 {
     align-self: center;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
+body,
+html {
+    height: 100%;
+    margin: 0;
 }
-header{
+
+header {
     position: relative;
     text-align: center;
     top: 0;
@@ -51,18 +57,77 @@ header{
     align-items: center;
     justify-content: center;
 }
-.intro{
+
+.intro {
     background-image: url(img/MayItNeverFalter.png);
     background-repeat: no-repeat;
     height: 110vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 65em;
+    height: 80em;
     color: white;
 }
-header > .summary{
+
+.summary {
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "Playwrite GB S", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#zen-preamble {
+    width: 100%;
+}
+
+.preamble {
+    clear: left;
+    float: left;
+    left: 26%;
+    margin-left: -527px;
+    max-width: 100%;
+    position: relative;
+    top: 18.66%;
+    width: 50%;
+    z-index: 4;
+    background-color: #D9D3C190;
+    position: relative;
+}
+
+.preamble > p{
+    inline-size: 150px;
+    overflow-wrap: break-word;
+  
+}
+
+.preamble:after {
+    clear: right;
+    content: url(img/css.png);
+    display: block;
+    float: left;
+    height: 412px;
+    left: 50%;
+    margin-top: -310px;
+    max-width: 495px;
+    min-width: 412px;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.supporting {
+    background-color: #D9D3C1;
+    border-top: 5px solid #D9D3C1;
+    border-bottom: 5px solid #D9D3C1;
+    float: left;
+    position: relative;
+    width: 100%;
+    z-index: 3;
 }
 
 header h2 {
