@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+a {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-shadow: #000 1px 1px 1px;
+    -webkit-font-smoothing: antialiased;
+    filter: drop-shadow(16px 31px 20px #000);
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-image: url(img/MayItNeverFalter-NoGlaive.jpg);
+    background-repeat: no-repeat;
+    height: 110vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 80em;
+}
 
 * {
-    color: white;
+    box-sizing: border-box;
 }
 
 [role=banner] {
@@ -40,11 +64,7 @@ header h1 {
     align-self: center;
 }
 
-body,
-html {
-    height: 100%;
-    margin: 0;
-}
+
 
 header {
     position: relative;
@@ -89,8 +109,9 @@ header {
     float: left;
     left: 26%;
     margin-left: -26%;
-    max-width: 107%;
+    max-width: 100%;
     top: 19.66%;
+    height: 19%;
     background-color: #D9D3C190;
     position: relative;
     font-family: "Playwrite GB S", serif;
@@ -126,7 +147,7 @@ header {
 }
 
 .supporting {
-    background-color: #D9D3C1;
+
     border-top: 5px solid #D9D3C1;
     border-bottom: 5px solid #D9D3C1;
     float: left;
@@ -135,36 +156,23 @@ header {
     z-index: 3;
 }
 
+.explanation {
+    background-color: #D9D3C1;
+}
+
 header h2 {
     display: flex;
 
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    font-family: "Playwrite GB S", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-}
-
-.main:nth-child(1),
-.main:nth-child(2) {
-    justify-content: space-around;
-}
-
-.main:nth-child(4) {
-    order: 3;
-}
-
 .sidebar {
     background-color: #747484;
-    left: 85%;
+    color: white;
+    left: 88%;
     margin-left: 0%;
-    max-width: 16%;
-    top: 136.66%;
+    max-width: 21%;
+    width: 12%;
+    top: 99.66%;
     position: absolute;
     z-index: 10;
     font-family: "Playwrite GB S", serif;
@@ -172,21 +180,134 @@ header h2 {
     font-weight: normal;
     font-style: normal;
     border-radius: 2em 0 0 2em;
+    filter: drop-shadow(16px 31px 20px #000);
 }
+
 
 .sidebar h3 {
     text-align: center;
-    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 .benefits {
-    background-image: url(img/MayItNeverFalter-NoGalaive.jpg);
-    opacity: 0.8;
+    background-color: #74748495;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0%;
+    max-width: 82em;
+    width: 40%;
+    height: 17em;
+    top: -17em;
+    flex-direction: column;
+    color: white;
+    filter: drop-shadow(16px 31px 20px #000);
 }
 
-.explanation .participation{
-    display: inline-block;
+.main {
+    font-family: "Playwrite GB S", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.explanation {
+    color: black;
+}
+
+div.explanation {
+    color: #000000;
+    padding: 5%;
+}
+
+@media screen and (min-width: 550px) {
+    div.explanation {
+        float: left;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    div.participation {
+        float: left;
+        width: 60%;
+        overflow-wrap: break-word;
+        inline-size: 50%;
+    }
+}
+
+div.participation {
+    background: #D9D3C1;
+    color: #000000;
+    padding: 10%;
+}
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+figure,
+li {
+    position: relative;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.requirements {
+    word-wrap: break-word;
+    width: 100%;
+    background-image: url(img/MayItNeverFalter-NoGlaive.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 7em;
+    height: 40em;
+    z-index: 2;
+    opacity: 90%;
+}
+
+[role=contentinfo] {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-image: url(img/MayItNeverFalter-NoGlaive.jpg);
+    background-color: #7474846b;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: xx-large;
+}
+
+footer::after {
+    content: url(img/MayItNeverFalter-NoBG.png);
+    display: block;
+    float: right;
+    height: 5em;
+    left: 0%;
+    margin-top: -20em;
+    max-width: 380px;
+    min-width: 327px;
+    position: relative;
+    width: 75%;
+    z-index: 1;
 }
